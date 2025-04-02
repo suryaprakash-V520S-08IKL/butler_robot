@@ -1,0 +1,11 @@
+<launch>
+    <!-- Start Order Manager -->
+    <node pkg="butler_robot" type="order_manager.py" name="order_manager" output="screen" />
+
+    <!-- Start Navigation System -->
+    <node pkg="butler_robot" type="navigation.py" name="navigation_node" output="screen" />
+
+    <!-- Start Confirmation Handler -->
+    <node pkg="butler_robot" type="confirmation_handler.py" name="confirmation_handler" output="screen" />
+</launch>
+
